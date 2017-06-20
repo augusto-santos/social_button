@@ -6,6 +6,12 @@ module.exports = {
     path: path.resolve(__dirname, "dist/scripts"),
     filename: "script.js",
   },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port:3003,
+    hot: true
+  },
   module: {
     rules: [
       {

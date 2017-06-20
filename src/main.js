@@ -1,10 +1,7 @@
-const social = [
-  {"label": "facebook", "color": "red"},
-  {"label": "twitter", "color": "blue"}
-]
+const social = ['facebook','twitter', 'nobiu']
 
 const element = document.getElementById('social')
 const p = document.createElement('p')
 element.appendChild(p)
 
-element.innerHTML = social[0].label
+element.innerHTML = social[2]

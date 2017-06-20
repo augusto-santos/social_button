@@ -70,13 +70,13 @@
 "use strict";
 
 
-var social = [{ "label": "facebook", "color": "red" }, { "label": "twitter", "color": "blue" }];
+var social = ['facebook', 'twitter', 'nobiu'];
 
 var element = document.getElementById('social');
 var p = document.createElement('p');
 element.appendChild(p);
 
-element.innerHTML = social[0].label;
+element.innerHTML = social[2];
 
 /***/ })
 /******/ ]);
