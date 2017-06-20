@@ -1,0 +1,61 @@
+:root {
+  --height-btn-social: 40px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-social {
+  width: 180px;
+  height: var(--height-btn-social);
+  cursor: pointer;
+  background: #424a68;
+  border-radius: calc(var(--height-btn-social) / 2);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  will-change: box-shadow;
+  -webkit-transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+}
+
+.btn-social:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15), 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: box-shadow .6s ease;
+  transition: box-shadow .6s ease;
+}
+
+#social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: var(--height-btn-social);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fcfbfb;
+  font-size: 14px;
+  font-weight: 600;
+}
