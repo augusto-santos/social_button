@@ -1,61 +1,62 @@
-:root {
-  --height-btn-social: 40px;
+:root{
+	--color-primary: #212121;
+	--height-btn-social: 40px;
+	--shadow-root: 0 0 2px 0 rgba(0,0,0,.15), 0 2px 2px 0 rgba(0,0,0,.25);
+	--shadow-root-hover: 0 0 8px 0 rgba(0,0,0,.15), 0 8px 8px 0 rgba(0,0,0,.25);
 }
 
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
+body{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	background: #fafafa;
+}
+
+.wrapper_btn{
+	display: flex;
+	padding: 8px 16px;
+	width: 130px;
+	height: var(--height-btn-social);
+	border-radius: 4px;
+	background: var(--color-primary);
+	cursor: pointer;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	box-shadow: var(--shadow-root);
+	will-change: box-shadow;
+	transition: box-shadow .3s ease;
+}
+
+.wrapper_btn:hover{
+	box-shadow: var(--shadow-root-hover);
+}
+
+#btn_social{
+	width: 100%;
   height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn-social {
-  width: 180px;
-  height: var(--height-btn-social);
-  cursor: pointer;
-  background: #424a68;
-  border-radius: calc(var(--height-btn-social) / 2);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-  will-change: box-shadow;
-  -webkit-transition: box-shadow .3s ease;
-  transition: box-shadow .3s ease;
-}
-
-.btn-social:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15), 0 8px 8px 0 rgba(0, 0, 0, 0.25);
-  -webkit-transition: box-shadow .6s ease;
-  transition: box-shadow .6s ease;
-}
-
-#social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: var(--height-btn-social);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fcfbfb;
-  font-size: 14px;
-  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn_social p{
+	font-size: 14px;
+	font-family: Helvetica;
+	font-weight: 600;
+}
+
+.face{
+	background: blue !important;
 }
